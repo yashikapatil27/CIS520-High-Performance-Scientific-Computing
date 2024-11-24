@@ -1,5 +1,6 @@
 # CIS520-High-Performance-Scientific-Computing
-This repository contains homework assignments, lab work, and solutions from the **High Performance Scientific Computing** course. It demonstrates a variety of computational techniques, including **Monte Carlo methods**, parallel computing with **OpenMP** and **MPI** (including **MPI Bcast**), **memory optimization**, and **algorithm design**. The work spans multiple languages and environments, with significant usage of **Jupyter Notebooks** for analysis, **C** for core computational algorithms, and **Shell scripting** for automation.
+This repository contains homework assignments, lab work, and solutions from the **High Performance Scientific Computing** course. 
+It demonstrates a variety of computational techniques, including **Monte Carlo methods**, parallel computing with **OpenMP** and **MPI** (including **MPI Bcast**), **memory optimization**, and **algorithm design**. The work spans multiple languages and environments, with significant usage of **Jupyter Notebooks** for analysis, **C** for core computational algorithms, and **Shell scripting** for automation.
 
 
 ## Repository Structure
