@@ -1,0 +1,35 @@
+#!/bin/bash
+
+#SBATCH -J Hw3
+
+#SBATCH -o Hw3.o%j
+
+#SBATCH -e Hw3.e%j
+
+#SBATCH -p debug
+
+#SBATCH -N 1
+
+#SBATCH -n 128
+
+#SBATCH -t 00:10:00
+
+#SBATCH -A SEE230009
+
+#SBATCH --mail-user=smohan1@umassd.edu
+
+#SBATCH --mail-type=all 
+
+Cores=("1" "2" "4" "8" "16" "32" "64" "128")
+
+for i in "${Cores[@]}"
+
+do
+
+         export OMP_NUM_THREADS=$i
+
+         #echo $OMP_NUM_THREADS
+
+        ./pcc 100000000 10 $i
+
+done
