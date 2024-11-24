@@ -1,0 +1,20 @@
+#!/bin/bash
+#----------------------------------------------------
+#SBATCH -J lab7 # Job name
+#SBATCH -o lab7.o%j # Name of stdout output file
+#SBATCH -e lab7.e%j # Name of stderr error file
+#SBATCH -p debug # Queue (partition) name
+#SBATCH -N 1 # Total # of nodes (still use 1 node)
+#SBATCH -n 64 # Total # ask for 64 cores on a node
+#SBATCH -t 00:05:00 # Run time (hh:mm:ss)
+#SBATCH -A SEE230009 # Name of class allocation
+#SBATCH --mail-user=ypatil1@umassd.edu
+#SBATCH --mail-type=all # Send email at begin and end of job
+echo "Run 1 with 2 threads..."
+export OMP_NUM_THREADS=2
+echo $OMP_NUM_THREADS
+# ./parfor
+echo "Run 2 with 64 threads..."
+export OMP_NUM_THREADS=64
+echo $OMP_NUM_THREADS
+# ./parfor

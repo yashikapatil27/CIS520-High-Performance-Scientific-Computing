@@ -1,0 +1,45 @@
+Task 1
+
+Part A:
+
+gym-master/README.md:This does not include dependencies for all families of environments (there's a massive number, and some can be problematic to install on certain systems). You can install these dependencies for one family like `pip install gym[atari]` or use `pip install gym[all]` to install all dependencies.
+gym-master/tests/wrappers/test_atari_preprocessing.py:    """A testing implementation for the ALE object in atari games."""
+gym-master/tests/wrappers/test_atari_preprocessing.py:        """Returns the number of lives in the atari game."""
+gym-master/tests/wrappers/test_atari_preprocessing.py:    """A testing environment to replicate the atari (ale-py) environments."""
+gym-master/tests/wrappers/test_atari_preprocessing.py:def test_atari_preprocessing_grayscale(env, obs_shape):
+gym-master/tests/wrappers/test_atari_preprocessing.py:def test_atari_preprocessing_scale(grayscale, scaled, max_test_steps=10):
+gym-master/setup.py:    "atari": ["ale-py~=0.8.0"],
+gym-master/setup.py:testing_group = set(extras.keys()) - {"accept-rom-license", "atari"}
+gym-master/gym/wrappers/atari_preprocessing.py:    Specifically, the following preprocess stages applies to the atari environment:
+gym-master/gym/wrappers/atari_preprocessing.py:    - Resize to a square image: Resizes the atari environment original observation shape from 210x180 to 84x84 by default
+gym-master/gym/wrappers/atari_preprocessing.py:                "opencv-python package not installed, run `pip install gym[other]` to get dependencies for atari"
+gym-master/gym/wrappers/__init__.py:from gym.wrappers.atari_preprocessing import AtariPreprocessing
+
+Part B:
+34 gym-master/LICENSE.md
+
+Part C:
+12
+
+Task 2
+
+Part A:
+
+commit 35a8e714b564857d76034a1ea7d3ee6a943fe3f5 (HEAD -> main, origin/main, origin/HEAD)
+Author: Scott Field <sfield@umassd.edu>
+Date:   Sat Sep 2 17:33:10 2023 +0000
+
+    README.md edited online with Bitbucket
+
+commit 2064151845711b6c84be011306e3ffc5c6eb6c2f
+Author: Scott Field <sfield@umassd.edu>
+Date:   Sat Sep 2 17:30:46 2023 +0000
+
+    Initial commit
+
+Part B (Cloned both the repositories to the desktop)
+
+
+
+
+

@@ -1,0 +1,1 @@
+On setting N=10, the function gets sampled 256 times. The output from AnvilMPI.job.sh shows local max for processes 0 to 255.
